@@ -1,0 +1,60 @@
+{{ partial "head" . }}
+<body class="home-template">
+
+    {{ partial "header" . }}
+    {{ partial "navigation" . }}
+
+    <main class="content" role="main">
+
+        <article>
+            <p>Bath has a rich literary history with books written in Bath, inspired by Bath, and published in Bath - as well as tales of different experiences when famous names have visited this world heritage city.  This site creates a physical and historical trail around the city, providing digital content to aid in discovery of these stories.</p>
+
+            <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+
+            <div id="map" style="height: 400px;"></div>
+            <script>
+
+                var map = L.map('map').setView([51.375801, -2.359904], 14);
+                L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png', {
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+                    maxZoom: 18,
+                }).addTo(map);
+
+                var redMarker = L.AwesomeMarkers.icon({
+                    icon: 'book',
+                    markerColor: 'red'
+                });
+                var blueMarker = L.AwesomeMarkers.icon({
+                    icon: 'book',
+                    markerColor: 'blue'
+                });
+                var greenMarker = L.AwesomeMarkers.icon({
+                    icon: 'book',
+                    markerColor: 'green'
+                });
+                var orangeMarker = L.AwesomeMarkers.icon({
+                    icon: 'book',
+                    markerColor: 'orange'
+                });
+
+                L.marker([51.372796, -2.360131], { icon: redMarker }).bindPopup("Midnight on Beechen, Thomas Hardy").addTo(map);
+                L.marker([51.381481, -2.358735], { icon: blueMarker }).bindPopup("Frankenstein, Mary Shelley").addTo(map);
+                L.marker([51.383786, -2.359987], { icon: greenMarker }).bindPopup("The Pickwick Papers, Charles Dickens").addTo(map);
+                L.marker([51.3850250, -2.3635420], { icon: orangeMarker }).bindPopup("Persuasion, Jane Austen").addTo(map);
+
+            </script>
+            <p>Charles Dickens, Mary Shelley, Jane Austen - they all have experiences of the city to be discovered.  Hunt out the posters around Bath libraries and interact with your mobile device to obtain further digital content.</p>
+        </article>
+
+        {{ partial "post-list" . }}
+        {{ partial "pagination" . }}
+    </main>
+
+    {{ partial "footer" . }}
+    {{ partial "js" . }}
+
+</body>
+</html>

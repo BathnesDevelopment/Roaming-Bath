@@ -1,0 +1,37 @@
+baseurl = "http://roamingbath.bathnes.gov.uk/"
+languageCode = "en-us"
+title = "Roaming Bath"
+theme = "hugo-steam-theme"
+disqusShortname = "roamingbath"
+paginate = 10
+
+[params]
+	title = "Roaming Bath"
+	subtitle = "A literary history trail."
+	copyright = "Released under the Open Government license."
+
+	# You can choose between green, orange, red and blue.
+	themeColor = "orange"
+	# Enable Google Analytics be inserting your tracking code
+	googleAnalytics = ""
+
+	# To provide some metadata for search engines and the about section in the footer
+	# feel free to add a few information about you and your website.
+	name = "IT and Library Services"
+	bio = "A project created from within IT and Library services at Bath Council."
+	description = ""
+	location = "Bath, UK" # optional
+	twitter = "roamingbath" # optional
+	github = "bathnesdevelopment" # optional
+
+	# Enable a comment system
+	# You can choose between Disqus or Google Plus by setting comments
+	# to disqus or googleplus. For using Disqus you need to enter your
+	# shortname in disqusShortname at the top of the configs. 
+	comments = "disqus"
+
+	# Customize or translate the strings
+	keepReadingStr = "Read more..."
+	backtotopStr = "Back to top"
+	shareStr = "Share"
+	pageNotFoundTitle = "404 - Page not found"
