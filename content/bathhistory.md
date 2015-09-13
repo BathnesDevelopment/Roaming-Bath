@@ -1,6 +1,6 @@
 +++
 date = "2015-09-13T12:14:04+01:00"
-draft = true
+draft = false
 menu = "main"
 title = "Bath literature history"
 
@@ -25,8 +25,6 @@ The British National Bibliography (BNB) lists the books and new journal titles p
 
 ## Bath: Hacked
 As demonstrated above, Bath:Hacked compiles many resources that can be of use to heritage trails and understanding the history of Bath.  For historical maps of Bath, as well as much more data please visit <a href="http://data.bathhacked.org">data.bathhacked.org</a>.
-
-![Bath:Hacked](/images/bath-hacked.png)
 
 ## Bath in Time
 Bath in Time is a huge collection of historical images from Bath, digitised and made available in a browsable format, with the option to order prints.

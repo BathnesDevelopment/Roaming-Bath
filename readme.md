@@ -1,14 +1,11 @@
 # Roaming Bath
 
-
 ## Setup guide
 
 To install Hugo follow the instructions at:
 
-
 Then copy down this repository to a local directory
 - $ git clone
-
 
 To install the theme:
 - mkdir themes
